@@ -1,0 +1,219 @@
+.findButton,.findButton::after {
+    padding: 10px 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .findButton::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'GLITCH';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  .findButton:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+    background-color: transparent;
+    border: 3px solid rgb(0, 255, 213);
+  }
+  
+  .findButton:hover {
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+  }
+  
+  .findButton:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+
+.fyffwSvg {
+    display: none;
+}  
+
+.fyffwSvgRuler {
+  display: none;
+} 
+
+#lengthDiv, #weightDiv, #sizeDiv, #finalDiv {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    display: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#lengthDiv.active, #weightDiv.active, #sizeDiv.active, #finalDiv.active {
+    display: block; 
+}
+
+#lengthDiv label,
+#weightDiv label,
+#sizeDiv label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+#lengthDiv input[type="number"],
+#weightDiv input[type="number"],
+#sizeDiv select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    line-height: 1.5; 
+    height: auto; 
+}
+
+#lengthDiv input[type="number"]:focus,
+#weightDiv input[type="number"]:focus,
+#sizeDiv select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#lengthDiv button,
+#weightDiv button,
+#sizeDiv button,
+#finalDiv button {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  position: relative;
+}
+
+#lengthDiv button:hover,
+#weightDiv button:hover,
+#sizeDiv button:hover,
+#finalDiv button:hover {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+#sizeDiv h3,
+#finalDiv h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#finalSize {
+    font-size: 22px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#lengthDiv {
+    display: none;
+}
+
+#weightDiv {
+    display: none;
+}
+
+#sizeDiv {
+    display: none;
+}
+
+#finalDiv {
+    display: none;
+}

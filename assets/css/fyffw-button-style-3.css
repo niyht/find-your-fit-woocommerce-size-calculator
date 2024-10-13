@@ -1,0 +1,141 @@
+.findButton {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+  
+  .findButton:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .findButton:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+.fyffwSvg {
+    display: none;
+}     
+
+.fyffwSvgRuler {
+    display: none;
+}    
+
+#lengthDiv, #weightDiv, #sizeDiv, #finalDiv {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    display: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#lengthDiv.active, #weightDiv.active, #sizeDiv.active, #finalDiv.active {
+    display: block; 
+}
+
+#lengthDiv label,
+#weightDiv label,
+#sizeDiv label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+#lengthDiv input[type="number"],
+#weightDiv input[type="number"],
+#sizeDiv select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    line-height: 1.5; 
+    height: auto; 
+}
+
+#lengthDiv input[type="number"]:focus,
+#weightDiv input[type="number"]:focus,
+#sizeDiv select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#lengthDiv button,
+#weightDiv button,
+#sizeDiv button,
+#finalDiv button {
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+
+#lengthDiv button:hover,
+#weightDiv button:hover,
+#sizeDiv button:hover,
+#finalDiv button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+#sizeDiv h3,
+#finalDiv h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#finalSize {
+    font-size: 22px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#lengthDiv {
+    display: none;
+}
+
+#weightDiv {
+    display: none;
+}
+
+#sizeDiv {
+    display: none;
+}
+
+#finalDiv {
+    display: none;
+}

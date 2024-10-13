@@ -1,0 +1,106 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Find Your Fit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-20 11:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+"X-Domain: find-your-fit"
+
+#. Description of the plugin
+msgid ""
+"A WooCommerce plugin to help customers find their fit by entering height, "
+"weight, and typical size."
+msgstr ""
+
+#. %1$s is the user's size.
+#: admin/admin-page.php:266
+#, php-format
+msgid "Based on your usual size and measurements, size %1$s seems correct."
+msgstr ""
+
+#. Author of the plugin
+msgid "Brksoft"
+msgstr ""
+
+#: includes/single-product-button.php:58
+msgid "Close"
+msgstr ""
+
+#: includes/single-product-button.php:44
+msgid "Enter the size you usually wear"
+msgstr ""
+
+#: includes/single-product-button.php:32
+msgid "Enter your height"
+msgstr ""
+
+#: includes/single-product-button.php:38
+msgid "Enter your weight"
+msgstr ""
+
+#. Name of the plugin
+#: includes/single-product-button.php:9
+msgid "Find Your Fit"
+msgstr ""
+
+#: includes/single-product-button.php:52
+msgid "Finish"
+msgstr ""
+
+#: includes/single-product-button.php:48
+msgid "L"
+msgstr ""
+
+#: includes/single-product-button.php:47
+msgid "M"
+msgstr ""
+
+#: includes/single-product-button.php:34 includes/single-product-button.php:40
+msgid "Next"
+msgstr ""
+
+#: admin/admin-page.php:260
+msgid "Please enter your height."
+msgstr ""
+
+#: admin/admin-page.php:263
+msgid "Please enter your weight."
+msgstr ""
+
+#: find-your-fit.php:56
+msgid "Please fill in all fields with valid data."
+msgstr ""
+
+#: includes/single-product-button.php:46
+msgid "S"
+msgstr ""
+
+#: includes/single-product-button.php:56
+msgid "This is probably the right size for you:"
+msgstr ""
+
+#: includes/single-product-button.php:49
+msgid "XL"
+msgstr ""
+
+#: includes/single-product-button.php:50
+msgid "XXL"
+msgstr ""
+
+#. %1$s is the user's usual size, %2$s is the recommended size.
+#: admin/admin-page.php:269
+#, php-format
+msgid ""
+"You usually wear size %1$s, but based on your measurements, we recommend "
+"size %2$s. You might consider trying both to see which fits best."
+msgstr ""
